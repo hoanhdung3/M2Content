@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="widget_category_model" class="M2Content\UIComponents\Block\Components\Model\Category">
+        <label translate="true">Model Category</label>
+        <parameters>
+            <parameter name="image" xsi:type="block" visible="true" required="true" sort_order="1">
+                <label translate="true">Image</label>
+                <description translate="true">The image should have a max height of 400px.</description>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="image_resize_width" xsi:type="text" visible="true" required="true" sort_order="5">
+                <label translate="true">Image Resize Width</label>
+            </parameter>
+            <parameter name="heading" xsi:type="text" visible="true" required="true" sort_order="10">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="subtitle" xsi:type="text" visible="true" required="false" sort_order="20">
+                <label translate="true">Subtitle</label>
+            </parameter>
+            <parameter name="anchor_text" xsi:type="text" visible="true" required="false" sort_order="50">
+                <label translate="true">Button Text</label>
+            </parameter>
+            <parameter name="id_path" xsi:type="block" visible="true" required="true" sort_order="60">
+                <label translate="true">Category</label>
+                <block class="Magento\Catalog\Block\Adminhtml\Category\Components\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Category...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="widget_product_model" class="M2Content\UIComponents\Block\Components\Model\Product">
+        <label translate="true">Model Product</label>
+        <parameters>
+            <parameter name="image" xsi:type="block" visible="true" required="true" sort_order="1">
+                <label translate="true">Highlight Image</label>
+                <description translate="true">The image should have a max height of  400px.</description>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="image_resize_width" xsi:type="text" visible="true" required="true" sort_order="5">
+                <label translate="true">Image Resize Width</label>
+            </parameter>
+            <parameter name="heading" xsi:type="text" visible="true" required="true" sort_order="10">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="subtitle" xsi:type="text" visible="true" required="false" sort_order="20">
+                <label translate="true">Subtitle</label>
+            </parameter>
+            <parameter name="description" xsi:type="block" visible="true" required="true" sort_order="30">
+            <parameter name="anchor_text" xsi:type="text" visible="true" required="false" sort_order="50">
+                <label translate="true">Button Text</label>
+            </parameter>
+            <parameter name="id_path" xsi:type="block" visible="true" required="true" sort_order="60">
+                <label translate="true">Product</label>
+                <block class="Magento\Catalog\Block\Adminhtml\Product\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Product...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget id="widget_banner_category" class="M2Content\UIComponents\Block\Components\Banner\Category">
+        <label translate="true">Banner Category</label>
+        <parameters>
+            <parameter name="large_image" xsi:type="block" visible="true" required="true" sort_order="1">
+                <label translate="true">Large Image</label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Large Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="large_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="2">
+                <label translate="true">Large Image</label>
+            </parameter>
+            <parameter name="medium_image" xsi:type="block" visible="true" required="true" sort_order="4">
+                <label translate="true">Medium Image</label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Medium Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="medium_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="5">
+                <label translate="true">Medium Image </label>
+            </parameter>
+            <parameter name="small_image" xsi:type="block" visible="true" required="true" sort_order="7">
+                <label translate="true">Small Image </label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Small Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="small_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="8">
+                <label translate="true">Small Image </label>
+            </parameter>
+            <parameter name="heading" xsi:type="text" visible="true" required="true" sort_order="10">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="subtitle" xsi:type="text" visible="true" required="false" sort_order="20">
+                <label translate="true">Subtitle</label>
+            </parameter>
+            <parameter name="description" xsi:type="block" visible="true" required="false" sort_order="30">
+                <label translate="true">Description</label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Widget\Textarea"/>
+            </parameter>
+            <parameter name="anchor_text" xsi:type="text" visible="true" required="false" sort_order="50">
+                <label translate="true">Button Text</label>
+                <description translate="true">If empty, we'll use the category name here.</description>
+            </parameter>
+            <parameter name="inverted_color" xsi:type="select" visible="true" sort_order="70" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Inverted Colors</label>
+            </parameter>
+            <parameter name="id_path" xsi:type="block" visible="true" required="true" sort_order="80">
+                <label translate="true">Category</label>
+                <block class="Magento\Catalog\Block\Adminhtml\Category\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Category...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="widget_banner_product" class="M2Content\UIComponents\Block\Components\Banner\Product">
+        <label translate="true">Banner Product</label>
+        <parameters>
+            <parameter name="large_image" xsi:type="block" visible="true" required="true" sort_order="1">
+                <label translate="true">Large Image</label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Large Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="large_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="2">
+                <label translate="true">Large Image </label>
+            </parameter>
+            <parameter name="medium_image" xsi:type="block" visible="true" required="true" sort_order="4">
+                <label translate="true">Medium Image </label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Medium Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="medium_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="5">
+                <label translate="true">Medium Image</label>
+            </parameter>
+            <parameter name="small_image" xsi:type="block" visible="true" required="true" sort_order="7">
+                <label translate="true">Small Image </label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\ImagePicker">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Small Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="small_image_resize_width" xsi:type="text" visible="true" required="true" sort_order="8">
+                <label translate="true">Small Image </label>
+            </parameter>
+            <parameter name="heading" xsi:type="text" visible="true" required="true" sort_order="10">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="subtitle" xsi:type="text" visible="true" required="false" sort_order="20">
+                <label translate="true">Subtitle</label>
+            </parameter>
+            <parameter name="description" xsi:type="block" visible="true" required="false" sort_order="30">
+                <label translate="true">Description</label>
+                <block class="M2Content\UIComponents\Block\Adminhtml\Components\Textarea"/>
+            </parameter>
+            <parameter name="anchor_text" xsi:type="text" visible="true" required="false" sort_order="50">
+                <label translate="true">Button Text</label>
+            </parameter>
+            <parameter name="inverted_color" xsi:type="select" visible="true" sort_order="70" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Invert Colors</label>
+            </parameter>
+            <parameter name="id_path" xsi:type="block" visible="true" required="true" sort_order="60">
+                <label translate="true">Product</label>
+                <block class="Magento\Catalog\Block\Adminhtml\Product\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Product...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

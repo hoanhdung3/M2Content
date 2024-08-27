@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\Category" type="M2Content\UIComponents\Block\Components\Model\Link">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Category</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\Product" type="M2Content\UIComponents\Block\Components\Model\Link">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Product</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\CategoryPromotion" type="M2Content\UIComponents\Block\Components\Model\Promotion">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Category</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\ProductPromotion" type="M2Content\UIComponents\Block\Components\Model\Promotion">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Product</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\CustomPromotion" type="M2Content\UIComponents\Block\Components\Model\Promotion">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">null</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="M2Content\UIComponents\Block\Components\Model\MiniCustomPromotion" type="M2Content\UIComponents\Block\Components\Model\MiniPromotion">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">null</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Banner\Category" type="M2Content\UIComponents\Block\Components\Model\Banner">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Category</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Banner\Product" type="M2Content\UIComponents\Block\Components\Model\Banner">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">Magento\Catalog\Model\ResourceModel\Product</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="M2Content\UIComponents\Block\Components\Banner\CustomBanner" type="M2Content\UIComponents\Block\Components\Model\Banner">
+        <arguments>
+            <argument name="entityResource" xsi:type="object">null</argument>
+        </arguments>
+    </virtualType>
+</config>

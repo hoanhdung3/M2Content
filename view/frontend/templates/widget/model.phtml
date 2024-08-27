@@ -1,0 +1,30 @@
+<?php
+
+?>
+<div class="model-widget model-banner">
+    <div class="model-wrapper">
+        <div class="model-image">
+            <img src="<?= $escaper->escapeUrl($block->getImage()) ?>" alt="<?= $escaper->escapeHtml($block->getLabel()) ?>" />
+        </div>
+        <div class="model-content">
+            <?php if ($block->getSubtitle()) : ?>
+                <div class="model-subtitle">
+                    <em><?= $escaper->escapeHtml($block->getSubtitle()) ?></em>
+                </div>
+            <?php endif; ?>
+            <div class="model-header">
+                <strong><?= $escaper->escapeHtml($block->getHeading()) ?></strong>
+            </div>
+            <div class="model-text">
+                <?= $escaper->escapeHtml($block->getDescription(), $block->getAllowedHtmlTags()) ?>
+            </div>
+            <div class="model-buttons">
+                <div class="model-primary">
+                    <a <?= $block->getLinkAttributes() ?>>
+                        <span class="action primary"><?= $escaper->escapeHtml($block->getLabel()) ?></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
